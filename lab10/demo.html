@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form action="" method="post" enctype="multipart/form-data">
+      <label for=""
+        >Ho va ten
+        <input type="text" name="" id="" />
+      </label>
+      <br /><br />
+      <fieldset>
+        <legend>Gioi Tinh</legend>
+        <input type="radio" name="gen" checked id="male" />
+        <label for="male">Nam</label>
+        <input type="radio" name="gen" checked id="female" />
+        <label for="female">Nu</label>
+      </fieldset>
+      <label for="">Date of birth</label>
+      <hr />
+      <input
+        style="width: 100%"
+        placeholder="dd/mm/yy"
+        type="text"
+        name=""
+        id=""
+      />
+      <br /><br />
+      <label for="">Grading scode</label> <br />
+      <input
+        style="width: 100%; background: yellow"
+        min="0"
+        max="10"
+        step="0.25"
+        type="number"
+        name=""
+        id=""
+      />
+      <br /><br />
+      <label for="">job</label> <br />
+      <input list="job_data" style="width: 100%" type="text" />
+
+      <datalist id="job_data">
+        <option value="Teacher"></option>
+        <option value="student"></option>
+        <option value="Doctor"></option>
+        <option value="Seller"></option>
+        <option value="Accounter"></option>
+      </datalist>
+      <br /><br />
+      <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" value="Sport" name="" id="" />
+        <label for="">Sport</label>
+
+        <input type="checkbox" value="Travel" name="" id="" />
+        <label for="">Travel</label>
+
+        <input type="checkbox" value="Music" name="" id="" />
+        <label for="">Music</label>
+
+        <input type="checkbox" value="Cuisine" name="" id="" />
+        <label for="">Cuisine</label>
+      </fieldset>
+      <br />
+      <label for="">Ghi chu</label><br />
+      <textarea id=""></textarea>
+      <hr />
+      <button
+        style="
+          cursor: pointer;
+          color: white;
+          background: linear-gradient(rgb(255, 123, 0), rgb(183, 66, 255));
+          border-radius: 90px;
+          border: none;
+          width: 70px;
+          height: 30px;
+        "
+        type="submit"
+      >
+        Register
+      </button>
+      <button
+        style="
+          cursor: pointer;
+          color: white;
+          background: linear-gradient(rgb(255, 17, 0), rgb(255, 138, 66));
+          border-radius: 90px;
+          border: none;
+          width: 70px;
+          height: 30px;
+        "
+        type="submit"
+      >
+        Reset
+      </button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .textarea {
+        background: yellow;
+      }
+      .bt_add {
+        border: none;
+        width: 70px;
+        height: 25px;
+        border-radius: 90px;
+        color: white;
+        background: linear-gradient(
+          to right,
+          rgb(31, 210, 34),
+          rgb(139, 198, 234)
+        );
+      }
+      .bt_edit {
+        border: none;
+        width: 70px;
+        height: 25px;
+        border-radius: 90px;
+        color: white;
+        background: linear-gradient(
+          to right,
+          rgb(255, 81, 81),
+          rgb(255, 215, 38)
+        );
+      }
+      .bt_delete {
+        border: none;
+        width: 70px;
+        height: 25px;
+        border-radius: 90px;
+        color: white;
+        background: linear-gradient(
+          to right,
+          rgb(233, 18, 18),
+          rgb(242, 112, 103)
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" method="post" enctype="multipart/form-data">
+      <label for=""
+        >Ho va ten
+        <input type="text" name="" id="" />
+      </label>
+      <br /><br />
+      <label for="">country</label> <br />
+      <input list="country_data" style="width: 100%" type="text" />
+
+      <datalist id="country_data">
+        <option value="VietNam"></option>
+        <option value="Philippine"></option>
+        <option value="Lao"></option>
+        <option value="China"></option>
+        <option value="USA"></option>
+      </datalist>
+
+      <br /><br />
+      <fieldset>
+        <legend>Gioi Tinh</legend>
+        <input type="radio" name="gen" checked id="male" />
+        <label for="male">Nam</label>
+        <input type="radio" name="gen" checked id="female" />
+        <label for="female">Nu</label>
+      </fieldset>
+      <label for="">Ghi chu</label><br />
+      <textarea id=""></textarea>
+      <hr />
+      <button class="bt_add">Them</button>
+      <button class="bt_edit">Sua</button>
+      <button disabled class="bt_delete">Xoa</button>
+    </form>
+  </body>
+</html>
